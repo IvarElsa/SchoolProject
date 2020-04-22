@@ -1,0 +1,57 @@
+header{
+	background-color: white;
+}
+.pages-h1{
+	text-align: center;
+	margin-top: 70px;
+	text-transform: uppercase;
+	margin-bottom: 30px;
+}
+.photocards	{
+	float: right;
+	width: 250px;
+	height: 270px;
+	background-color: #f6f2f2;
+}
+.photocards img{
+	border:1px solid black; 
+}
+.pages-h2{
+	text-align: center;
+	margin-top: 90px;
+	text-transform: uppercase;
+}
+.pages-h3{
+	margin-top: 70px;
+}
+.li-pages{
+   padding-top: 15px;
+   opacity: 0.8;
+}
+#minus{
+	margin-top: 40px;
+}
+.section__button{
+	margin:0 auto;
+	margin-bottom: 50px;
+}
+#gaz{
+	height: 250px;
+}
+.header__button{
+	margin:0 auto;
+	margin-bottom: 50px;
+	margin-top: 50px;
+}
+#air__text{
+	text-align: center;
+}
+#air{
+	height: 230px;
+}
+#air-h2{
+	margin-top: 20px;
+}
+#air-list{
+	margin-bottom: 60px;
+}
