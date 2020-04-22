@@ -151,10 +151,22 @@ color: red;
 .images{
 	width: 355px;
 	height: 305px;
-	animation-name: fade;
-	animation-timing-function: ease;
-	animation-duration: 2s;
+	-webkit-animation-name: fade;
+	        animation-name: fade;
+	-webkit-animation-timing-function: ease;
+	        animation-timing-function: ease;
+	-webkit-animation-duration: 2s;
+	        animation-duration: 2s;
+	-webkit-transition: opacity 2s ease;
 	transition: opacity 2s ease;
+}
+@-webkit-keyframes fade{
+	from{
+		opacity: 0.4;
+	}
+	to{
+		opacity: 1;
+	}
 }
 @keyframes fade{
 	from{
@@ -173,16 +185,24 @@ color: red;
 	padding-top: 80px;
 }
 #arrow_right{
-	animation-name: movingR;
-	animation-timing-function: ease;
-	animation-duration: 2s;
-    animation-iteration-count: infinite;
+	-webkit-animation-name: movingR;
+	        animation-name: movingR;
+	-webkit-animation-timing-function: ease;
+	        animation-timing-function: ease;
+	-webkit-animation-duration: 2s;
+	        animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
 }
 #arrow_left{
-	animation-name: movingL;
-	animation-timing-function: ease;
-	animation-duration: 2s;
-    animation-iteration-count: infinite;
+	-webkit-animation-name: movingL;
+	        animation-name: movingL;
+	-webkit-animation-timing-function: ease;
+	        animation-timing-function: ease;
+	-webkit-animation-duration: 2s;
+	        animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
 }
 .arrow:hover{
 	cursor: pointer;
@@ -190,17 +210,29 @@ color: red;
 .arrow:active{
 	color: red;
 }
+@-webkit-keyframes movingL{
+	0%   { -webkit-transform: translateX(0); transform: translateX(0); }
+	30%  { -webkit-transform: translateX(-10px); transform: translateX(-10px); }
+	50%  { -webkit-transform: translateX(0); transform: translateX(0); }
+	100% { -webkit-transform: translateX(0); transform: translateX(0); }
+}
 @keyframes movingL{
-	0%   { transform: translateX(0); }
-	30%  { transform: translateX(-10px); }
-	50%  { transform: translateX(0); }
-	100% { transform: translateX(0); }
+	0%   { -webkit-transform: translateX(0); transform: translateX(0); }
+	30%  { -webkit-transform: translateX(-10px); transform: translateX(-10px); }
+	50%  { -webkit-transform: translateX(0); transform: translateX(0); }
+	100% { -webkit-transform: translateX(0); transform: translateX(0); }
+}
+@-webkit-keyframes movingR{
+	0%   { -webkit-transform: translateX(0); transform: translateX(0); }
+	30%  { -webkit-transform: translateX(10px); transform: translateX(10px); }
+	50%  { -webkit-transform: translateX(0); transform: translateX(0); }
+	100% { -webkit-transform: translateX(0); transform: translateX(0); }
 }
 @keyframes movingR{
-	0%   { transform: translateX(0); }
-	30%  { transform: translateX(10px); }
-	50%  { transform: translateX(0); }
-	100% { transform: translateX(0); }
+	0%   { -webkit-transform: translateX(0); transform: translateX(0); }
+	30%  { -webkit-transform: translateX(10px); transform: translateX(10px); }
+	50%  { -webkit-transform: translateX(0); transform: translateX(0); }
+	100% { -webkit-transform: translateX(0); transform: translateX(0); }
 }
 footer{
 	background-color: #313030;
